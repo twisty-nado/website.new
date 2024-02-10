@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>twistynado's website</title>
+</head>
+
+<body>
+    <div class="main glass">
+        <h2 class="titletext"></h2>
+        <p>I'm Twisty Nado. A tech guy who programs in ROBLOX, Unreal Engine 4 and more.<br/>My favourite games are: <ul><li>Hello Neighbor</li><li>BeamNG.drive</li><li>Garry's Mod</li><li>Portal</li><li>Teardown</li></ul><br/></p>
+        <p>I recently bought an RTX 4060. It's a good budget graphics card and I do recommend it.<br/></p>
+        <p>I'm also a blender artist and <a target="_blank" href="https://www.youtube.com/c/twistynado">youtuber</a>!</p>
+        <a target="_blank" href="https://w11.twistynado.com" class="a">Windows 11 in HTML</a>
+        <a target="_blank" class="a" aria-disabled="true">Windows 7 in HTML</a>
+        <a target="_blank" href="https://pino.twistynado.com" class="a">Pino</a>
+        <a target="_blank" href="https://gsb2.twistynado.com" class="a">Gravity Sandbox</a>
+        <a target="_blank" href="https://gravitysandbox.neocities.org" class="a">Gravity Sandbox [V0.5]</a>
+        <a target="_blank" href="https://bscsim.twistynado.com" class="a">Blue Screen Simulator</a>
+        <a target="_blank" href="https://code.twistynado.com" class="a">Code</a>
+        <a target="_blank" href="https://old.twistynado.com" class="a">Old Site</a>
+    </div>
+
+    <script>
+        var currentTime = new Date().getHours();
+        var titleText = document.querySelector(".titletext")
+        if (document.body) {
+            if (7 <= currentTime && currentTime < 11) {
+                document.body.classList.add("morning");
+                titleText.innerHTML = "Good morning!";
+            }
+            else if (11 <= currentTime && currentTime < 13) {
+                document.body.classList.add("noon");
+                titleText.innerHTML = "Good day!";
+            }
+            else if (13 <= currentTime && currentTime < 17) {
+                document.body.classList.add("afternoon");
+                titleText.innerHTML = "Good afternoon!";
+            }
+            else if (17 <= currentTime && currentTime < 20) {
+                document.body.classList.add("evening");
+                titleText.innerHTML = "Good evening!";
+            }
+            else if (20 <= currentTime) {
+                document.body.classList.add("night");
+                titleText.innerHTML = "Good night!";
+            }
+        }
+    </script>
+</body>
+
+</html>
